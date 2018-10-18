@@ -1,0 +1,18 @@
+<div class="body">
+    <div class="inicio"*ngIf="mostrarBoton">
+        <label class="text">Cuantas teclas puedes presionar correctamente en 1 Minuto?</label><br>
+        <button  class="button" (click)="Empezar()">Empezar</button>
+    </div><br><br><br><br>
+    <div class="inicio" *ngIf="mostrarJuego">
+
+        <p> PUNTUACIÓN={{score}}  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tiempo={{tiempo}} </p><br><br>
+        <label class="letra">{{teclaElegida}}</label> 
+
+        <input type="text" class="input" [disabled]="termino" [(ngModel)]="inputLetra" (keydown)="onKeydown($event)"><br><br><br>
+        <button class="botonReintentar" (click)="VolverAJugar()">VOLVER A JUGAR</button>
+
+    </div>
+      
+    
+
+</div>

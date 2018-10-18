@@ -1,0 +1,22 @@
+<div class="base">
+    <div class="inputs">
+        
+        <form class="example-form">
+            <label class="text">INGRESAR</label>
+    <mat-form-field class="example-full-width">
+      <input matInput [(ngModel)]="usuario" [ngModelOptions]="{standalone: true}" placeholder="Usuario">
+    </mat-form-field>
+  
+    <mat-form-field class="example-full-width">
+      <textarea matInput [(ngModel)]="contrasena" [ngModelOptions]="{standalone: true}" placeholder="Contraseña"></textarea>
+    </mat-form-field>
+    <br>
+    <button mat-flat-button class="flat-button" color="primary" (click)="Ingresar()">INGRESAR</button>
+    <button mat-flat-button class="flat-button" color="warn" (click)="Registrarse()">REGISTRARSE</button>
+    
+    </form>
+
+    </div>
+</div>
+
+

@@ -1,0 +1,19 @@
+<div class="body">
+    <div class="inicio"*ngIf="mostrarBoton">
+        <label class="text">Derrota a la maquina la mayor cantidad de veces que puedas.</label><br>
+        <button  class="button" (click)="Empezar()">Empezar</button>
+    </div><br><br><br><br>
+    <div class="inicio" *ngIf="mostrarJuego">
+      PUNTUACIÓN={{score}} <br><br>
+
+      <label class="juegoMaquina"> {{ppt[eleccionMaquina]}}</label>
+      <br><br><br>
+      <button  class="piedra" (click)="Piedra()">PIEDRA</button>
+      <button  class="papel" (click)="Papel()">PAPEL</button>
+      <button  class="tijera" (click)="Tijera()">TIJERA</button>
+
+    </div>
+      
+    
+
+</div>

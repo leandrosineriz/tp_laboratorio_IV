@@ -1,0 +1,71 @@
+.body{
+    background-color: rgb(14, 197, 230);
+    color:black;
+    height: 100%;
+    width: 100%;
+}
+
+.button{
+    width: 50%;
+    margin-left: 15%;
+    height: 30%;
+    background-color: black;
+    color: aliceblue;
+}
+.text{
+    font-size: 200%;
+    margin-top: 20%;
+}
+.juegoMaquina{
+    font-size: 400%;
+    color:red;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px black;
+    margin-left: 40%;
+}
+.inicio{
+    height: 40%;
+    margin-left: 25%;
+    width: 50%;
+    
+}
+.letra{
+    font-size: 550%;
+}
+.padding{
+    margin-left: 20%;
+    width: 60%;
+    background-color: blue;
+    border-radius: 2%;
+}
+.input{
+    width: 100%;
+    height: 30%;
+}
+.piedra{
+    width: 30%;
+    margin-left: 3%;
+    height: 30%;
+    background-color: rgb(28, 31, 219);
+    color: black;
+    font-size: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.papel{
+    width: 30%;
+    margin-left: 3%;
+    height: 30%;
+    background-color: rgb(62, 218, 31);
+    color: black;
+    font-size: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.tijera{
+    width: 30%;
+    margin-left: 3%;
+    height: 30%;
+    background-color: rgb(226, 10, 10);
+    color: black;
+    font-size: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

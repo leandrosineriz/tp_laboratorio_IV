@@ -1,0 +1,21 @@
+<div class="color">
+
+  <div class="inicio"*ngIf="mostrarBoton">
+    <label class="text">Ordena la mayor cantidad de palabras en 1 minuto.</label><br>
+    <button  class="button" (click)="Empezar()">Empezar</button>
+  </div><br><br><br><br>
+  <div class="padding" *ngIf="mostrarJuego">PUNTUACIÓN={{score}}         Tiempo={{tiempo}}
+      <table >
+          <tr >
+            <td  *ngFor="let letra of palabraDesordenada">
+              <label class="letra" >{{letra}}</label>
+            </td>  
+          </tr>
+        </table><br><br>
+        <input type="text" class="input" [disabled]="termino" [(ngModel)]="inputPalabra" (keydown)="onKeydown($event)"><br><br><br>
+        <button class="botonReintentar" (click)="VolverAJugar()">VOLVER A JUGAR</button>
+        <button class="botonRendirse" (click)="Rendirse()">RENDIRSE</button>
+  </div>
+
+  
+</div>
